@@ -7,7 +7,7 @@ Methods for performing financial calculations ported from my Crystal version
 Add this to your source code
 
 ```go
-import "github.com/drum445/goFinance"
+import "github.com/drum445/gofin"
 ```
 
 Run in a terminal in your project root
@@ -70,7 +70,7 @@ gofin.Rate(18,1909.53,-103616.44,77477, 0) # => 6.0
 
 ## Contributing
 
-1. Fork it ( https://github.com/drum445/goFinance/fork )
+1. Fork it ( https://github.com/drum445/gofin/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
