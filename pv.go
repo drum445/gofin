@@ -1,4 +1,4 @@
-package finance
+package gofin
 
 import "math"
 
