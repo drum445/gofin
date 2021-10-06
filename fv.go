@@ -7,7 +7,7 @@ func FV(rate, nper, pmt, pv, loanType float64) float64 {
 		return -1 * (pv + pmt*nper)
 	}
 
-	ratePerAnnum := (rate / 100) / 12
+	ratePerAnnum := rate
 	pow := math.Pow((1 + ratePerAnnum), nper)
 	fv := (pmt * (1 + ratePerAnnum*loanType) * (1 - pow) / ratePerAnnum) - pv*pow
 	return fv

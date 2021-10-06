@@ -15,7 +15,7 @@ func PV(rate, nper, pmt, fv, loanType float64) float64 {
 	if rate == 0.00 {
 		pv = -pmt*nper - fv
 	} else {
-		raterPerAnnum := ((rate / 100) / 12)
+		raterPerAnnum := rate
 
 		annuity := pvAnnuity(raterPerAnnum, nper, pmt, fv, loanType)
 		fv := pvF(raterPerAnnum, nper)

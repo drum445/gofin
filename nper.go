@@ -8,7 +8,7 @@ func NPER(rate, pmt, pv, fv, loanType float64) float64 {
 		return nper
 	}
 
-	ratePerAnnum := (rate / 100) / 12
+	ratePerAnnum := rate
 	num := pmt*(1+ratePerAnnum*loanType) - fv*ratePerAnnum
 	den := (pv*ratePerAnnum + pmt*(1+ratePerAnnum*loanType))
 	nper := math.Log10(num/den) / math.Log10(1+ratePerAnnum)

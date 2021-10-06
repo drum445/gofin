@@ -10,7 +10,7 @@ func PMT(rate, nper, pv, fv, loanType float64) float64 {
 	if rate == 0.00 {
 		pmt = pvMinusFV / nper
 	} else {
-		raterPerAnnum := (rate / 100) / 12
+		raterPerAnnum := rate
 		rateToNPER := math.Pow((raterPerAnnum + 1), nper)
 		pmt = (pvMinusFV * (raterPerAnnum * rateToNPER)) / (rateToNPER - 1)
 
